@@ -1,0 +1,108 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#101713">
+  <meta name="description" content="이민수의 Unreal Engine 개발 포트폴리오. 게임플레이 시스템, XR·물리·하드웨어 연동 경험과 개발 도구 프로젝트를 소개합니다.">
+  <meta property="og:title" content="이민수 | Unreal Engine Programmer">
+  <meta property="og:description" content="게임플레이에서 디바이스까지, 상호작용을 구현합니다. 프로젝트의 구현 범위와 기술적 판단을 확인하세요.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://immigration2000.github.io/">
+  <meta name="color-scheme" content="dark">
+  <link rel="icon" href="./favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="./styles.css">
+  <link rel="canonical" href="https://immigration2000.github.io/">
+  <title>이민수 | Unreal Engine Programmer</title>
+  <script src="./app.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">본문으로 건너뛰기</a>
+  <header class="header wrap">
+    <a class="wordmark" href="#home" aria-label="이민수 포트폴리오 처음으로">LM<span class="wordmark-dot">.</span><span class="wordmark-name">이민수</span></a>
+    <nav aria-label="주 메뉴"><a href="#projects">프로젝트</a><a href="#skills">기술과 경험</a><a href="#contact">연락하기</a></nav>
+    <a class="header-github" href="https://github.com/immigration2000" target="_blank" rel="noopener noreferrer">GitHub</a>
+  </header>
+  <main id="main">
+    <section class="hero wrap" id="home" aria-labelledby="hero-title">
+      <div class="hero-copy">
+        <p class="eyebrow">UNREAL ENGINE PROGRAMMER</p>
+        <h1 id="hero-title">상호작용을<br><span>시스템으로</span> 만듭니다.</h1>
+        <p class="hero-desc">게임플레이부터 XR, 물리, 하드웨어 연동까지.<br>Unreal Engine을 중심으로 사용자 입력과 시스템의 반응을 연결하는 개발자, <strong>이민수</strong>입니다.</p>
+        <div class="hero-actions"><a class="button primary" href="#projects">프로젝트 살펴보기</a><a class="button secondary" href="#contact">연락하기</a></div>
+        <p class="hero-footnote">C++ & Blueprint <span>/</span> Gameplay Systems <span>/</span> XR & Device Integration</p>
+      </div>
+      <div class="hero-art" aria-label="입력, 로직, 피드백의 연결을 나타낸 개념도">
+        <div class="art-top"><span>INTERACTION / SYSTEM VIEW</span><span>UE</span></div>
+        <svg class="system-art" viewBox="0 0 480 350" role="img" aria-labelledby="art-title"><title id="art-title">입력에서 로직, 피드백으로 이어지는 상호작용 구조 설명용 도식</title>
+          <defs><pattern id="dots" width="24" height="24" patternUnits="userSpaceOnUse"><circle cx="1" cy="1" r="1" fill="#3c4b40"/></pattern><linearGradient id="cube-face" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#bcf476"/><stop offset="1" stop-color="#789d46"/></linearGradient></defs>
+          <rect width="480" height="350" fill="url(#dots)"/>
+          <g fill="none" stroke="#596a59" stroke-width="1.5"><path d="M64 116H140L240 174L338 116H417"/><path d="M64 266H143L240 210L340 266H417"/><path d="M240 210V318"/><path d="M240 28V125"/><path d="M104 116V266M378 116V266" stroke-dasharray="5 6"/></g>
+          <g stroke="#d0f89c" stroke-width="1.5"><path d="M240 108L310 149V230L240 271L170 230V149Z" fill="#17291a"/><path d="M240 108L310 149L240 190L170 149Z" fill="url(#cube-face)"/><path d="M170 149L240 190V271L170 230Z" fill="#5f7b3d"/><path d="M310 149L240 190V271L310 230Z" fill="#223a25"/></g>
+          <g fill="#c0f482"><circle cx="64" cy="116" r="5"/><circle cx="417" cy="116" r="5"/><circle cx="64" cy="266" r="5"/><circle cx="417" cy="266" r="5"/></g>
+          <g fill="#c1ccbf" font-family="monospace" font-size="13"><text x="28" y="94">INPUT</text><text x="361" y="94">DEVICE</text><text x="28" y="295">PHYSICS</text><text x="354" y="295">GAMEPLAY</text></g>
+        </svg>
+        <div class="art-bottom"><span>INPUT</span><span class="art-line"></span><span>LOGIC</span><span class="art-line"></span><span>FEEDBACK</span></div>
+      </div>
+    </section>
+    <div class="focus-strip"><div class="wrap focus-inner"><span>개발의 중심</span><p>데이터 기반 게임플레이</p><span class="divider"></span><p>물리 기반 인터랙션</p><span class="divider"></span><p>소프트웨어와 디바이스 연결</p></div></div>
+
+    <section class="section wrap" id="projects" aria-labelledby="projects-title">
+      <div class="section-heading"><div><p class="eyebrow">SELECTED WORK</p><h2 id="projects-title">만들어 온 시스템</h2></div><p>무엇을 구현했는지,<br>어디까지 확인할 수 있는지.</p></div>
+      <article class="project featured" id="inventory">
+        <div class="project-copy">
+          <div class="project-top"><span class="category">GAMEPLAY SYSTEM</span><span class="badge">개인 프로젝트 · 소스 비공개</span></div>
+          <h3>Grid Inventory System</h3>
+          <p class="project-lead">그리드의 한 칸에서 시작해,<br>아이템과 장비의 상태를 연결합니다.</p>
+          <p>크기가 다른 아이템의 배치·이동과 장비 슬롯 간 전환을 다루는 Unreal Engine 인벤토리입니다. 데이터와 처리 로직을 UI에서 분리하고, 로컬 저장 API로 상태를 이어가는 구성을 개발하고 있습니다.</p>
+          <ul class="tags"><li>UE 5.8</li><li>C++</li><li>Blueprint / UMG</li><li>Data Table</li><li>Gameplay Tags</li></ul>
+          <dl class="project-facts"><div><dt>확인한 구현</dt><dd>그리드 이동·회전, 장착·해제 처리, 드래그 앤 드롭 경로, HTTP/JSON 스냅샷 저장 API</dd></div><div><dt>설계 포인트</dt><dd>Actor Component에 아이템 규칙을 두고 UI에서 호출. 저장 버전 충돌은 HTTP 409로 처리.</dd></div><div><dt>현재 범위</dt><dd>정적 소스·저장된 Blueprint 분석 기준. 이번 검토에서 UE 실행과 DB 왕복을 재현하지 않았으며, 서버는 로컬 학습용입니다.</dd></div></dl>
+          <details><summary>구현과 다음 단계를 자세히 보기</summary><div class="detail-body"><p>C++의 이동·장비 처리 함수와 UMG에 저장된 호출 노드를 정적으로 확인했습니다. 실제 호출 대상의 컴파일러/UHT 검증과 실행 검증은 별도입니다. ASP.NET Core·EF Core·MSSQL 코드에는 로그인, 인벤토리 조회·저장, 버전 충돌 처리가 있습니다.</p><p>운영용 게임 서버, 전체 아이템 규칙의 서버 검증, 멀티플레이 Replication은 완료 항목으로 주장하지 않습니다. 브라우저 데모는 이 페이지에서 별도로 만든 배치 개념 예제입니다.</p><p class="muted">비공개 저장소의 코드와 원본 에셋은 이 사이트에 포함하지 않았습니다. 공개 가능한 시연 자료를 정리하는 것이 다음 단계입니다.</p></div></details>
+        </div>
+        <div class="inventory-demo">
+          <div class="demo-caption"><span>GRID PLACEMENT LAB</span><span>브라우저 개념 데모</span></div>
+          <div class="demo-toolbar"><label for="item-type">아이템</label><select id="item-type"><option value="tool">도구 · 2 × 3</option><option value="kit">키트 · 2 × 2</option><option value="cell">모듈 · 1 × 2</option></select><button id="rotate" type="button" aria-pressed="false">회전</button></div>
+          <div class="inventory-grid" id="inventory-grid" role="group" aria-label="8열 6행 인벤토리 배치 결과"></div>
+          <div class="demo-actions"><button class="button primary" id="auto-place" type="button">빈 공간에 배치</button><button class="text-button" id="reset-grid" type="button">초기화</button></div>
+          <p class="demo-status" id="demo-status" role="status" aria-live="polite">아이템을 선택해 빈 공간에 배치해 보세요.</p>
+          <p class="demo-note">8 × 6 GRID <span>/</span> FIRST FIT <span>/</span> ROTATION</p>
+          <p class="demo-disclaimer">설명용 JavaScript 예제입니다. 실제 UE 실행 화면이나 성능 측정 결과가 아닙니다.</p>
+        </div>
+      </article>
+
+      <div class="project-pair">
+        <article class="project" id="haptic">
+          <div class="project-top"><span class="category">DEVICE INTEGRATION</span><span class="badge public">공개 소스 확인</span></div>
+          <div class="signal-visual" aria-label="영상 재생 시간과 디바이스 명령의 관계를 나타낸 설명용 도식"><div class="signal-label"><span>VIDEO TIME</span><span>DEVICE COMMAND</span></div><svg viewBox="0 0 440 100" aria-hidden="true"><path d="M0 72H440M0 32H440" stroke="#34443b"/><path d="M0 60L45 60L75 24L105 76L145 36L180 58L215 16L255 70L290 42L325 60L360 25L400 68L440 48" fill="none" stroke="#b9ed80" stroke-width="2"/><path d="M0 90H75V78H105V90H145V78H180V90H215V78H255V90H290V78H325V90H360V78H400V90H440" fill="none" stroke="#a5b9e7" stroke-width="2"/></svg></div>
+          <h3>Haptic Sync Platform</h3><p class="project-lead">재생 시간을 디바이스의 명령으로.</p>
+          <p>영상 타임라인과 장치 명령을 연결하는 웹 기반 인터랙티브 플랫폼입니다. 채용 포트폴리오에서는 동기화 엔진과 통신 계층을 중심으로 소개합니다.</p>
+          <ul class="tags"><li>JavaScript</li><li>Web Serial / BLE</li><li>Node.js / Express</li><li>Socket.IO</li><li>SQLite</li></ul>
+          <dl class="project-facts"><div><dt>확인한 구현</dt><dd>영상 currentTime 기반 다축 명령 처리, 시간 탐색 후 재동기화, Serial/BLE 송신 경로, SQLite 저장 계층</dd></div><div><dt>검증 범위</dt><dd>공개 소스 정적 확인. 실제 기기 호환성·지연 수치·운영 안정성은 이번에 검증하지 않았습니다.</dd></div></dl>
+          <details><summary>기술적 판단과 남은 검증</summary><div class="detail-body"><p>화면 갱신 루프와 타이머가 같은 처리 함수를 호출하고, 지나간 명령은 축별 마지막 목표만 남기도록 구성되어 있습니다. 영상 탐색·배속·백그라운드 전환에 대응하는 코드가 있습니다.</p><p>README의 완료 표시와 실제 운영 검증을 구분합니다. 결제·본인인증의 실서비스 연동과 기기별 측정 결과는 검증된 실적으로 제시하지 않습니다.</p><p><a class="source-link" href="https://github.com/immigration2000/haptic-sync-platform/blob/711b2ac232833a45e64200a975586184b0c8cf72/public/js/core/funscript.js" target="_blank" rel="noopener noreferrer">동기화 엔진 소스</a> · <a class="source-link" href="https://github.com/immigration2000/haptic-sync-platform/blob/711b2ac232833a45e64200a975586184b0c8cf72/public/js/core/device.js" target="_blank" rel="noopener noreferrer">디바이스 통신 소스</a></p></div></details>
+          <a class="project-link" href="https://github.com/immigration2000/haptic-sync-platform" target="_blank" rel="noopener noreferrer">GitHub에서 구현 보기</a>
+        </article>
+        <article class="project" id="reader">
+          <div class="project-top"><span class="category">DEVELOPER TOOLING</span><span class="badge public">공개 소스 확인</span></div>
+          <div class="reader-visual" aria-label="에셋에서 그래프 정보와 문서를 생성하는 설명용 도식"><div class="file-node">.uasset<span>Blueprint</span></div><span class="connector"></span><div class="file-node accent">Graph IR<span>saved data</span></div><span class="connector"></span><div class="file-node">digest<span>Markdown</span></div></div>
+          <h3>UE Repo Reader</h3><p class="project-lead">바이너리 에셋을 읽을 수 있는 근거로.</p>
+          <p>Unreal 프로젝트의 C++·설정과 Blueprint·데이터 에셋을 분석해 탐색 가능한 문서를 생성하는 개발 보조 도구입니다.</p>
+          <ul class="tags"><li>Python</li><li>Asset Analysis</li><li>Graph IR</li><li>Markdown / JSON</li><li>MCP</li></ul>
+          <dl class="project-facts"><div><dt>확인한 구현</dt><dd>에셋 디코딩 연계, 그래프·선언 정보 추출, C++ 구문 색인, 분석 문서 생성, MCP 서버 코드</dd></div><div><dt>설계 포인트</dt><dd>확인된 저장 정보와 미확정 연결을 구분해 기록. 정적 분석의 한계를 결과에 함께 표시.</dd></div></dl>
+          <details><summary>지원 범위와 정확성의 경계</summary><div class="detail-body"><p>현재 기본 프로젝트 선언 지원은 UE 5.7·5.8입니다. 에셋 디코딩은 외부 파서를 활용하며, 모든 엔진 버전의 자체 파서를 구현했다는 의미는 아닙니다.</p><p>저장된 그래프와 C++ 구문을 읽는 도구입니다. 실행 시의 동작이나 C++·Blueprint 호출의 의미를 완전히 검증하지 않습니다. 본 포트폴리오 작성에도 정적 분석을 사용했습니다. AI 보조 도구를 활용한 개발이며, 전체 코드의 독립 작성 능력은 이번 검토의 검증 범위에 포함되지 않습니다.</p><p><a class="source-link" href="https://github.com/immigration2000/ue-repo-reader/blob/bf79221df2397d9f2e58b978887c2a7beee6c1fd/scripts/ue_repo_digest.py" target="_blank" rel="noopener noreferrer">분석 진입점 소스</a> · <a class="source-link" href="https://github.com/immigration2000/ue-repo-reader/blob/bf79221df2397d9f2e58b978887c2a7beee6c1fd/docs/GRAPH_IR.md" target="_blank" rel="noopener noreferrer">Graph IR 범위 문서</a></p></div></details>
+          <a class="project-link" href="https://github.com/immigration2000/ue-repo-reader" target="_blank" rel="noopener noreferrer">GitHub에서 구현 보기</a>
+        </article>
+      </div>
+      <article class="prototype"><div><span class="category">GAMEPLAY PROTOTYPE</span><h3>DeltaForceSystem</h3></div><p>UE 5.7 기반 Blueprint 게임플레이 실험 프로젝트. 비공개 저장소를 정적으로 분석했으며, Grid Widget·Control Rig 일부 노드는 해석되지 않아 해당 동작은 미확인입니다. 완성 게임·상용 출시 실적으로 제시하지 않습니다.</p><span class="badge">프로토타입 · 소스 비공개</span></article>
+    </section>
+
+    <section class="skills-section" id="skills" aria-labelledby="skills-title"><div class="section wrap">
+      <div class="section-heading"><div><p class="eyebrow">CAPABILITIES & CONTEXT</p><h2 id="skills-title">기술은 사용한 맥락과 함께.</h2></div><p>숙련도 점수 대신<br>경험과 근거를 구분합니다.</p></div>
+      <div class="skills-layout"><div class="experience"><span class="category">UNREAL · XR · PHYSICS</span><h3>입력과 물리 반응,<br>장치의 동작을 연결하는 경험.</h3><p>Unreal Engine 기반 XR 콘텐츠, 핸드 트래킹 상호작용, Physics Asset·Constraint 조정, Serial 통신을 통한 외부 장비 연동 경험을 바탕으로 게임플레이 시스템 개발로 영역을 넓히고 있습니다.</p><p class="evidence-note">실무 경험 설명은 이전 경력 정리 기준입니다. 회사명·경력 기간·회사 코드와 시각 자료는 공개하지 않았으며, 이번 소스 검토로 실무 이력을 독립 검증한 것은 아닙니다.</p></div>
+      <div class="skill-rows"><div class="skill-row"><h3>프로젝트 구현</h3><div><p>C++ · Blueprint · UMG<br>Actor Component · Data Table · Gameplay Tags<br>HTTP · JSON · Git / GitHub</p><a href="#inventory">인벤토리에서 사용한 맥락 보기</a></div></div><div class="skill-row"><h3>XR·물리 경험</h3><div><p>OpenXR · Meta XR · Hand Tracking<br>Physics Asset · Physics Constraint · Soft Body<br>Serial Communication</p><span class="skill-level">이전 경험 정리 기준 · 원본 실무 자료 미공개</span></div></div><div class="skill-row"><h3>도구·연동 활용</h3><div><p>JavaScript · Node.js · Express · SQLite<br>Python · MCP · AI 개발 보조 도구</p><span class="skill-level">공개 프로젝트 구현 범위 중심</span></div></div><div class="skill-row"><h3>학습·확장 중</h3><div><p>C# · ASP.NET Core · EF Core · MSSQL</p><span class="skill-level">로컬 인벤토리 저장 API 구현 · 운영 경험으로 주장하지 않음</span></div></div></div></div>
+    </div></section>
+
+    <section class="contact-section wrap" id="contact" aria-labelledby="contact-title"><div><p class="eyebrow">LET’S BUILD INTERACTION</p><h2 id="contact-title">다음 상호작용을<br>함께 만들고 싶습니다.</h2><p>Unreal Engine 게임플레이 · XR · 시스템 개발</p></div><div class="contact-links"><a class="contact-email" href="mailto:immigration200057@gmail.com">immigration200057@gmail.com</a><button class="text-button" id="copy-email" type="button">이메일 복사</button><span id="copy-status" role="status" aria-live="polite"></span><a class="button secondary" href="https://github.com/immigration2000" target="_blank" rel="noopener noreferrer">GitHub 프로필</a></div></section>
+  </main>
+  <footer class="footer wrap"><p>이민수 <span>/</span> immigration2000</p><p>프로젝트 확인 기준 2026.11.26 <span>·</span> 소스 확인과 실행 검증은 구분합니다.</p><a href="#home">처음으로</a></footer>
+</body>
+</html>
